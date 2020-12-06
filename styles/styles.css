@@ -928,18 +928,16 @@ Make it purdy :l
 /* ------------------------------------------------------------------
 Accessiblity :l
 ------------------------------------------------------------------- */
-
-
 .sr-only:not(:focus):not(:active) {
-  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
-  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
-  clip: rect(0 0 0 0); 
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden !important;
-  position: absolute;
-  white-space: nowrap; 
-  width: 1px;
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden !important;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 /* ------------------------------------------------------------------
@@ -965,7 +963,7 @@ Mobile :l
         top: 0;
         left: 0;
         opacity: 1;
-        background-color: rgba(38, 169, 199, 0.15);
+        background-color: rgba(188, 188, 188, 0.15);
     }
 
     .mobile-side-content {
@@ -979,34 +977,11 @@ Mobile :l
         margin-right: auto;
         margin-left: auto;
     }
-    
-    .mobile-side-content .content {
-        padding-right: 4rem;
-        padding-left: 1rem;
-    }
 
     .mobile-side-content .content {
-        float: left;
-    }
-
-    .mobile-side-content img {
-        width: 60%;
-        height: auto;
-    }
-
-    .width-8 {
-        min-width: 100%;
-        margin-left: 3rem;
-        padding-right: 3rem;
-    }
-
-    .section {
-        padding-left: 4rem;
         padding-right: 4rem;
-    }
 
-    .content {
-        padding-bottom: 2rem !important;
+        /* padding-left: 1rem */
     }
 }
 
@@ -1052,5 +1027,10 @@ Mobile :l
         margin-left: 3rem;
         padding-right: 3rem;
         text-align: center;
+    }
+
+    .mobile-side-content {
+        padding-right: 5rem !important;
+        padding-left: 0;
     }
 }
